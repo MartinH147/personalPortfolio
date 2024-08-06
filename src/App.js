@@ -2,8 +2,8 @@ import { useRef } from 'react';
 import React, { Component }from "react";
 import './App.css';
 import Spline from '@splinetool/react-spline';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUsers } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faUsers } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   const projects = useRef(null);
