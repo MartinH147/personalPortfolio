@@ -282,18 +282,67 @@ function App() {
             <h2 className='subheading'>Technical Skills</h2>
           </div>
           <div className='layoutRow'>
+            <div className='contentBox odd'>
+              <h3>Data Structures & Algorithms</h3>
+              <p>
+                I am on the road to learning data structures and algorithms.<br/>
+                I want to learn how to apply them on large scale projects, where they will be more important in saving time and space.
+              </p>
+            </div>
             <div className='imageBox'></div>
-            <div className='contentBox'>
-              <h3>Video Editing (Premiere Pro)</h3>
-              <p>...</p>
+          </div>
+          <div className='layoutRow'>
+            <div className='imageBox'></div>
+            <div className='contentBox '>
+              <h3>Databases</h3>
+              <p>
+                I have used a MySQL database for my SDD Major Project (Virtual Desk), and recently I've used Firebase's Firestore Database. <br/>
+                This has required me to read, write, update and manipulate these databases, as well as having an understanding of the structure of databases.
+              </p>
             </div>
           </div>
           <div className='layoutRow'>
             <div className='contentBox odd'>
-              <h3>Photoshop</h3>
-              <p>...</p>
+              <h3>Testing</h3>
+              <p>
+                Through the SDD course I have learnt about testing and its various forms and applications. <br/>
+                For my SDD Major Project there was a strong focus on testing, particularly at the program (integration) level.
+              </p>
             </div>
             <div className='imageBox'></div>
+          </div>
+          <div className='layoutRow'>
+            <div className='imageBox'></div>
+            <div className='contentBox '>
+              <h3>Software Development Life Cycle</h3>
+              <p>
+                I understand the SDLC's stages and the various development approaches. <br/>
+                For my SDD Major Project I applied the waterfall approach.
+              </p>
+            </div>
+          </div><div className='layoutRow'>
+            <div className='contentBox odd'>
+              <h3>Adobe Suite</h3>
+              <p>
+                I have experience with the following products from the Adobe suite (listed in order of competency): <br/>
+                - Premiere Pro<br/>
+                - XD<br/>
+                - Photoshop<br/>
+                - Animate<br/>
+                - Audition<br/>
+              </p>
+            </div>
+            <div className='imageBox'></div>
+          </div>
+          <div className='layoutRow'>
+            <div className='imageBox'></div>
+            <div className='contentBox'>
+              <h3>Version Control</h3>
+              <p>
+                I have started learning how to use Git in order to utilise version control for GitHub. <br/>
+                It is helping me prepare for working in team software projects.
+              </p>
+            </div>
           </div>
         </div>
         {/* AWARDS + QUALIFICATIONS */}
