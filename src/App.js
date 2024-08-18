@@ -2,6 +2,12 @@ import { useRef } from 'react';
 import React from "react";
 import './App.css';
 
+import fireplaceImg from './fireplace.png';
+import galtonBoardImg from './galtonBoard.png';
+import virtualDeskImg from './virtualDesk.png';
+import virtualAssistantImg from './virtualAssistant.png';
+import listsImg from './lists.png'
+
 import Spline from '@splinetool/react-spline';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,7 +15,7 @@ import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons/faCss3Alt';
 import { faJs } from '@fortawesome/free-brands-svg-icons';
 import { faPhp } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faDatabase, faFire } from '@fortawesome/free-solid-svg-icons';
 import { faPython } from '@fortawesome/free-brands-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
@@ -64,7 +70,9 @@ function App() {
           </div>
           {/* Project #1 */}
           <div className='layoutRow'>
-            <div className='imageBox'></div>
+            <div className='imageBox'>
+              <img src={virtualDeskImg} />
+            </div>
             <div className='contentBox'>
               <h3>Virtual Desk</h3>
               <p>
@@ -107,9 +115,10 @@ function App() {
             <div className='contentBox odd'>
               <h3>Virtual Assistant</h3>
               <p>
-                This is the second part of my HSC SDD Major Project. <br></br>
-                I wanted the main feature of my Virtual Desk was an AI assistant, however I had great struggles working with models from Hugging Face and so settled for the idea of a virtual assistant instead.<br></br>
-                The text-to-speech engine didn't work on Mac, but the version of the project I have uploaded to GitHub was before I switched over to finishing the assistant for Windows.
+                This was the second part of my HSC SDD Major Project. <br></br>
+                I wanted the main feature of my Virtual Desk to be an AI assistant. However, I had great struggles working with models from Hugging Face and so settled for the idea of a virtual assistant instead.<br></br>
+                The text-to-speech engine didn't work on MacOS, but the version of the project I have uploaded to GitHub was before I switched over to finishing the assistant for Windows. <br />
+                There was no interface for this project, it was run through the terminal/command prompt.
               </p>
               <br></br>
               <div className='projectLanguages'>
@@ -123,18 +132,22 @@ function App() {
                 <a href='https://github.com/MartinH147/virtualAssistant' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
               </p>
             </div>
-            <div className='imageBox'></div>
+            <div className='imageBox'>
+              <img src={virtualAssistantImg} />
+            </div>
           </div>
           {/* Project #3 */}
           <div className='layoutRow'>
-            <div className='imageBox'></div>
+            <div className='imageBox'>
+              <img src={listsImg} />
+            </div>
             <div className='contentBox'>
               <h3>Lists</h3>
               <p>
                 This was the very first piece of software that I wrote (other than bits of Python and block code). <br></br>
                 The idea was to create different wishlists by searching the web and then adding items as links. 
                 These wishlists could then be shared to others. <br></br>
-                This project ground to a halt as I realised that web scraping is a complicated and somewhat expensive process. 
+                This project ground to a halt as I realised that web scraping is a complicated and somewhat expensive process. Also, the project is failing to run because it's missing assets.
               </p>
               <br></br>
               <div className='projectLanguages'>
@@ -153,6 +166,73 @@ function App() {
                 <div className='projLangDiv'>
                   <FontAwesomeIcon icon={faJs} size='2x'/>
                   <p>JavaScript</p>
+                </div>
+              </div>
+              <br></br>
+              <p>
+                <a href='https://github.com/MartinH147/virtualDesk' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
+              </p>
+            </div>
+          </div>
+          {/* Project #4 */}
+          <div className='layoutRow'>
+            <div className='contentBox odd'>
+              <h3>Galton Board</h3>
+              <p>
+                This was the second part of my HSC SDD Major Project. <br></br>
+                I wanted the main feature of my Virtual Desk to be an AI assistant. However, I had great struggles working with models from Hugging Face and so settled for the idea of a virtual assistant instead.<br></br>
+                The text-to-speech engine didn't work on MacOS, but the version of the project I have uploaded to GitHub was before I switched over to finishing the assistant for Windows.
+              </p>
+              <br></br>
+              <div className='projectLanguages'>
+                <div className='projLangDiv'>
+                  <FontAwesomeIcon icon={faPython} size='2x'/>
+                  <p>Python</p>
+                </div>
+              </div>
+              <br></br>
+              <p>
+                <a href='https://github.com/MartinH147/virtualAssistant' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
+              </p>
+            </div>
+            <div className='imageBox'>
+              <img src={galtonBoardImg} />
+            </div>
+          </div>
+          {/* Project #5 */}
+          <div className='layoutRow'>
+            <div className='imageBox'>
+              <img src={fireplaceImg}/>
+            </div>
+            <div className='contentBox'>
+              <h3>Fireplace</h3>
+              <p>
+                This was the very first piece of software that I wrote (other than bits of Python and block code). <br></br>
+                The idea was to create different wishlists by searching the web and then adding items as links. 
+                These wishlists could then be shared to others. <br></br>
+                This project ground to a halt as I realised that web scraping is a complicated and somewhat expensive process. 
+              </p>
+              <br></br>
+              <div className='projectLanguages'>
+                <div className='projLangDiv'>
+                  <FontAwesomeIcon icon={faReact} size='2x'/>
+                  <p>React</p>
+                </div>
+                <div className='projLangDiv'>
+                  <FontAwesomeIcon icon={faFire} size='2x'/>
+                  <p>Firebase</p>
+                </div>
+                <div className='projLangDiv'>
+                  <FontAwesomeIcon icon={faJs} size='2x'/>
+                  <p>JavaScript</p>
+                </div>
+                <div className='projLangDiv'>
+                  <FontAwesomeIcon icon={faCss3Alt} size='2x'/>
+                  <p>CSS</p>
+                </div>
+                <div className='projLangDiv'>
+                  <FontAwesomeIcon icon={faHtml5} size='2x'/>
+                  <p>HTML</p>
                 </div>
               </div>
               <br></br>
@@ -199,13 +279,12 @@ function App() {
             <div className='contentBox odd'>
               <h3>HTML</h3>
               <p>
-                I acquired a basic understanding of HTML in 2021 when I completed an online beginners course, but it wasn't until 2022 when I realised that writing HTML meant I was actuall able to code websites. <br/>
-                There's really not too much to learn with HTML, hence why I've rated my competency a 6, as I feel that there is not too much left for me to learn. <br/>
-                I would suggest that I could learn more about metadata and the role of the head, as well as general practice on how to write good HTML code as opposed to just HTML that does the job.
+                I acquired a basic understanding of HTML in 2021 when I completed an online beginners course, but it wasn't until 2022 when I realised that writing HTML meant I was actually able to code websites. <br/>
+                I have more to learn about metadata and the role of the head, as well as general practice on how to write good HTML code as opposed to just HTML that does the job.
               </p>
               <br/>
               <div className='progressBox'>
-                <progress value={0.5} className='progress'/>
+                <progress value={0.6} className='progress'/>
                 <p className='progressIndicator'>
                   6
                 </p>
@@ -224,13 +303,13 @@ function App() {
               <p>
                 Naturally, I picked up CSS at the same time as I did HTML. <br/>
                 I've rated my competency a bit lower though, as I think I have much more CSS still to learn than I do HTML. <br/>
-                I want to have more experience with using CSS frameworks, as I'm aware that in industry these are the way to go.
+                I want to have more experience with using CSS frameworks, as I understand that in industry these are the way to go.
                 I also often find myself having to look up how to achieve certain looks with CSS, as there are so many properties.
                 I do think that I have a good level of competency with Flexbox, and in general I'm reasonably good at interface design.
               </p>
               <br/>
               <div className='progressBox'>
-                <progress value={0.5} className='progress'/>
+                <progress value={0.4} className='progress'/>
                 <p className='progressIndicator'>
                   4
                 </p>
@@ -241,14 +320,14 @@ function App() {
             <div className='contentBox odd'>
               <h3>JavaScript</h3>
               <p>
-                I first started with JavaScript when I made the Lists app. <br/>
+                I first started with JavaScript when I made the Lists app in React Native. <br/>
                 I was a bit scared of using vanilla JavaScript up until about 2023, but now, to an extent, I actually find it easier than working with a JavaScript framework. <br/>
-                So at the moment I really want to get better with React (and other frameworks), as I think this will seriously help me build more useable apps. <br/>
+                I want to get better with React (and other frameworks), as I think this will help me build more useable apps. <br/>
                 Even in creating this website, whilst I did use React, I know that I haven't really utilised the framework.
               </p>
               <br/>
               <div className='progressBox'>
-                <progress value={0.5} className='progress'/>
+                <progress value={0.4} className='progress'/>
                 <p className='progressIndicator'>
                   4
                 </p>
@@ -268,7 +347,7 @@ function App() {
                 I taught myself PHP in order to handle using a database for my SDD Major Project. <br/>
                 Unlike SQL, I didn't take an online course for this, and so I struggled for a while to piece things together. For ages I was trying to work out how to handle database actions with PHP functions, when really I just needed to use form submission handling. <br/>
                 I still don't have much of an understanding of PHP as a whole, so I don't really know how much more there is for me to learn. <br/>
-                I can say though that I am able to save, load, update and delete data from a database using PHP (in conjunction with SQL).
+                I am able to save, load, update and delete data from a database using PHP (in conjunction with SQL).
               </p>
               <br/>
               <div className='progressBox'>
@@ -307,7 +386,7 @@ function App() {
               <h3>Swift</h3>
               <p>
                 I'd been meaning to learn Swift since a few years ago, but only really got around to starting to learn it earlier this year. <br/>
-                All this really entailed was watching a few YouTube videos, and then following along with one to create a Tic Tac Toe game. Unfortunately I haven't had a chance to make another Swift project since. <br/>
+                All this really entailed was watching a few YouTube videos, and then following along with one to create a Tic Tac Toe game. <br/>
                 My idea for my next Swift project is to create a virtual guitar pedal using AudioKit or something similar. I've found though that there's a lot less support online for Swift than there is for JavaScript say, which is a problem as I'm still very much at the hand-holding stage.
               </p>
               <br/>
@@ -324,7 +403,7 @@ function App() {
               <h3>C#</h3>
               <p>
                 The only reason that I've touched C# is because my IST class used it in 2022 when we did game design as a topic. <br/>
-                I really didn't learn that much because the topic was brushed over quickly, but I figured I should include it here as I have at least dipped my toes in.
+                My engagement with C# has been very brief.
               </p>
               <br/>
               <div className='progressBox'>
