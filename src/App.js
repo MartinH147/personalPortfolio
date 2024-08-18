@@ -68,6 +68,11 @@ function App() {
           <div className='layoutRow'>
             <h2>Projects</h2>
           </div>
+          <div className='layoutRow'>
+            <p className='description'>
+              This is a selection of the projects that I have worked on.
+            </p>
+          </div>
           {/* Project #1 */}
           <div className='layoutRow'>
             <div className='imageBox'>
@@ -170,7 +175,7 @@ function App() {
               </div>
               <br></br>
               <p>
-                <a href='https://github.com/MartinH147/virtualDesk' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
+                <a href='https://github.com/MartinH147/lists' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
               </p>
             </div>
           </div>
@@ -179,9 +184,10 @@ function App() {
             <div className='contentBox odd'>
               <h3>Galton Board</h3>
               <p>
-                This was the second part of my HSC SDD Major Project. <br></br>
-                I wanted the main feature of my Virtual Desk to be an AI assistant. However, I had great struggles working with models from Hugging Face and so settled for the idea of a virtual assistant instead.<br></br>
-                The text-to-speech engine didn't work on MacOS, but the version of the project I have uploaded to GitHub was before I switched over to finishing the assistant for Windows.
+                This was for a school assignment, for Extension 1 maths. We were tasked with creating a galton board. Everyone else made a physical one. I thought I'd challenge myself and see if I could code one. <br/>
+                Apart from slight adjustments I made, this code was largely from a tutorial that I found on YouTube (I credit it in my source code). <br/>
+                I learnt some basics of PyGame as well as PyMunk, which is a physics simulation library (I am pretty interested in physics simulations). 
+                I think this was one of the first times I'd worked with Objects too.
               </p>
               <br></br>
               <div className='projectLanguages'>
@@ -192,7 +198,7 @@ function App() {
               </div>
               <br></br>
               <p>
-                <a href='https://github.com/MartinH147/virtualAssistant' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
+                <a href='https://github.com/MartinH147/galtonBoard' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
               </p>
             </div>
             <div className='imageBox'>
@@ -207,10 +213,10 @@ function App() {
             <div className='contentBox'>
               <h3>Fireplace</h3>
               <p>
-                This was the very first piece of software that I wrote (other than bits of Python and block code). <br></br>
-                The idea was to create different wishlists by searching the web and then adding items as links. 
-                These wishlists could then be shared to others. <br></br>
-                This project ground to a halt as I realised that web scraping is a complicated and somewhat expensive process. 
+                This project was actually the result of another failed project. I'd wanted to learn how to use Firebase to handle back-end, particularly databases, and initially I'd set out to make a Kanban app. <br/>
+                I'd tried working with the Realtime Database, put I struggled to read data from the database. After some looking around on YouTube, I found a tutorial which showed how to make a chat app using Firebase's Firestore Database. <br/>
+                So I switched gears and produced this, which apart from styling is just code from the video. <br/>
+                I plan to improve this app, if I can think of a concept that enhances the fireplace theme.
               </p>
               <br></br>
               <div className='projectLanguages'>
@@ -237,7 +243,7 @@ function App() {
               </div>
               <br></br>
               <p>
-                <a href='https://github.com/MartinH147/virtualDesk' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
+                <a href='https://github.com/MartinH147/chat-app' target="_blank" rel="noopener noreferrer">Check it out on Github</a>
               </p>
             </div>
           </div>
@@ -249,7 +255,7 @@ function App() {
             <h2 className='subheading'>Programming Languages</h2>
           </div>
           <div className='layoutRow'>
-            <p className='programmingLanguagesDescription'>
+            <p className='description'>
               All ratings of competency are on a scale of 1 (I began learning it yesterday) to 10 (I wrote the handbook on it). <br></br>
               Note that a 5 would be roughly indicative of a few years of experience with the language, but still plenty to learn.
             </p>
